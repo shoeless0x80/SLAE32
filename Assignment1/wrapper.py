@@ -3,7 +3,6 @@
 import sys, socket
 
 input_port = int(sys.argv[1])
-#format = socket.htons(input_port)
 hex_port = hex(socket.htons(input_port))
 first_half = hex_port[2:4]
 second_half = hex_port[4:6]
